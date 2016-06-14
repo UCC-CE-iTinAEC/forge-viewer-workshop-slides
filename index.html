@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
 
 		<link rel="stylesheet" href="css/reveal.css"/>
-		<link rel="stylesheet" href="css/theme/league.css" id="theme"/>
+		<link rel="stylesheet" href="css/theme/white.css" id="theme"/>
 		<link rel="stylesheet" href="lib/css/zenburn.css"/>
 		<link rel="stylesheet" href="css/custom.css"/>
 
@@ -28,6 +28,11 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
+		<!--font awesome-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
+        <!-- bootstrap -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -37,374 +42,139 @@
 			<div class="slides">
 
 				<section>
-					<h2 style="top: 50px;">Select Theme</h2>
-					<ul>
-						<li>
-							<a href="#" onclick="setTheme('black')">Black</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('white')">White</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('league')">League</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('sky')">Sky</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('beige')">Beige</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('simple')">Simple</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('serif')">Serif</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('black')">Black</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('blood')">Blood</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('night')">Night</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('moon')">Moon</a>
-						</li>
-						<li>
-							<a href="#" onclick="setTheme('solarized')">Solarized</a>
-						</li>
-					</ul>
-				</section>
-
-				<section>
-
-					<img src="./img/adsk.ico" width="100" height="100"
-						 style="position: absolute; left: 30%; top: 53px"/>
-
-					<img src="./img/forge.png" width="100" height="100"
-						 style="position: absolute; right: 29%; top: 53px"/>
-
-					<h2 style="top: 40px;">VISUAL REPORTS</h2>
-					<h2 style="top: 115px;font-size: 48px;">WITH CONNECTED DATA</h2>
-
-					<iframe src="./slides/connected-data.html" style="width:800px;height:500px;">
-					</iframe>
-
-					<p style="bottom: 0px; position: relative;">
-						<small>
-							<a href="http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html">
-								Philippe Leefsma
-							</a>
-							<a href="http://twitter.com/F3lipek">
-								@F3lipek
-							</a>
-							<br>
-							Forge Partner Development
-						</small>
-					</p>
-				</section>
-
-				<section>
+                    <img src="img/Autodesk-logo.png" width="30%">
+                    <h2>Forge - Viewer Tutorial</h2>
+                </section>
+                <section>
+                	<h4>Thank you to our Sponsor</h4>
+                	<img src="img/osv-sponsor.png" alt="Orange Sillicon Valley" width="75%">
+                </section>
+                <section>
+                    <h2>About Me</h2>
+                    <p>Jaime Rosales</p>
+                    <p>Developer Advocate</p>
+                    <p>Forge Developer Partner</p>
+                    <i class="fa fa-twitter fa-fw"></i> @AfroJme
+                </section>
+                <section>
 					<h2>AGENDA</h2>
 					<ol style="width: 500px;">
 						<li class="fragment"
 							style="margin-bottom: 60px";>
-							<b>Accessing your Design Data</b>
+							<b>Why 3D web</b>
 						</li>
 						<li class="fragment"
 							style="margin-bottom: 60px";>
-							<b>UI Customization & Overrides</b>
+							<b>Tutorial using Forge Viewer</b>
 						</li>
 						<li class="fragment"
 							style="margin-bottom: 60px";>
-							<b>Connecting External Data Sources</b>
+							<b>Developer Resources</b>
+						</li>
+						<li class="fragment"
+							style="margin-bottom: 60px";>
+							<b>Questions?</b>
 						</li>
 					</ol>
 				</section>
+                <section>
+                    <h2>First appearance of 3D in the Web</h2>
+                    <iframe width="480" height="360" src="https://www.youtube-nocookie.com/embed/-5x5OXfe9KY?&rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-				<section>
-					<h2 style="top: 250px;">Part I - ACCESSING DESIGN DATA</h2>
-				</section>
+                </section>
+                
+                <section>
+                    <iframe data-src="http://lmv.rocks/viewer/?url=http://lmv.rocks/data/racecar/Design.svf" class="iframe-fullscreen"></iframe>
 
-				<section>
-					<iframe src="./slides/structure-props.html" class="iframe-fullscreen">
-					</iframe>
-				</section>
+                </section>
+                 <section>
+                    <h3>2D vs 3D</h3>
+                    <img src="img/2Dvs3D.png" width="60%">
+                </section>
+                <section>
+                    <ul>
+                        <li><a href="http://www.cat.com/en_US/products/new/equipment/dozers/small-dozers/18267751.html" > 1st 2D sample</a></li>
+                        <li><a href="http://duchangyu.github.io/meetup-3d-on-web/3d-for-d4kz/index.html" > 1st 3D sample</a></li>
+                        <li><a href="http://www.pulte.com/communities/CA/roseville/Primros/floor-plans/683809/Residence-2.aspx#.VzH0sRV94dX" > 2nd 2D sample</a></li>
+                        <li><a href="http://duchangyu.github.io/meetup-3d-on-web/3d-for-pulte/index.html" > 2nd 3D sample</a></li>
+                        <li><a href="http://www.amazon.com/Schwinn-Protocol-Dual-Suspension-Mountain-26-Inch/dp/B001IANSJ6/" > 3rd 2D sample</a></li>
+                        <li><a href="http://duchangyu.github.io/meetup-3d-on-web/3d-for-amazon/index.html" > 3rd 3D sample</a></li>
 
-				<section>
-					<section>
-						<h2>VIEWER COMPONENT MODEL</h2>
-						<pre><code class="hljs" data-trim contenteditable>
+                    </ul>
 
-{
-  name: 'chassis'          //display name of the component
-  dbId: 53                 //unique id for the component in the model
-  fragIds: [38, 39]        //reference the three.js meshes
-  parent: 37               //dbId of the parent node
-  children: [65, 113, 146] //array of children nodes ids
-}
+                </section>
+                <section>
+                    <p class="fragment">Photoshop/Illustrator for visual designers</p>
+                    <p class="fragment">AutoCAD for interior designers</p>
+                    <p class="fragment">Rhino/Solidworks/Fusion for industrial designer</p>
+                    <p class="fragment">Revit for architects</p>
+                </section>
 
-						</code></pre>
-					</section>
+                 <section>
+                    <h2>Traditionally</h2>
+                    <p class="fragment">The designer makes up a design</p>
+                    <p class="fragment">they send it over to their client</p>
+                    <p class="fragment">client needs to download a software to view the file</p>
+                </section>
+                
+                <section>
+                    <h2>Outputs are proprietary formats</h2>
+                    <img src="img/file-formats.png" >
+                    <p class="fragment">Universal formats out there</p>
+                </section>
 
-					<section>
-						<h2>MODEL STRUCTURE (1)</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-
-var instanceTree = model.getData().instanceTree
-
-var rootId = instanceTree.getRootId()
-
-var rootNode = {
-    dbId: rootId,
-    name: instanceTree.getNodeName(rootId)
-}
-
-buildModelTreeRec(rootNode)
-
-return rootNode
-
-						</code></pre>
-					</section>
-
-					<section>
-						<h2>MODEL STRUCTURE (2)</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-
-function buildModelTreeRec (node) {
-
-    instanceTree.enumNodeChildren(node.dbId, function(childId) {
-
-        node.children = node.children || []
-
-        var childNode = {
-            dbId: childId,
-            name: instanceTree.getNodeName(childId)
-        }
-
-        node.children.push(childNode)
-
-        buildModelTreeRec(childNode)
-    })
-}
-
-						</code></pre>
-					</section>
-
-					<section>
-						<h2>NODE FRAGMENTS</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-
-var instanceTree = model.getData().instanceTree
-
-var fragIds = []
-
-instanceTree.enumNodeFragments(dbId, function (fragId) {
-
-    fragIds.push(fragId)
-})
-
-						</code></pre>
-					</section>
-
-					<section>
-						<h2>COMPONENT PROPERTIES</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-
-model.getProperties(dbId, function(result) {
-
-    if (result.properties){
-
-        result.properties.forEach( function (prop) {
-
-            console.log(prop)
-        })
-    }
-}
-					</code></pre>
-					</section>
-				</section>
-
+                <section>
+                    <h2>The problem?</h2>
+                    <ul>
+                        <li class="fragment">Extremely lossy</li>
+                        <li class="fragment">Often lose meta data like quantity, width, height</li>
+                        <li class="fragment">Rendered images and pdf are 3D into 2D</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Are we from the Past?</h2>
+                    <iframe src="http://giphy.com/embed/L4AQvif7x9fS8" width="480" height="277" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </section>
+                <section>
+                    <img src="img/webgl%20woody.jpg">
+                </section>
+                <section>
+                    <h2>WebGL</h2>
+                    <p class="fragment">JavaScript API that lets browsers render 3D</p>
+                    <p class="fragment">It's not a W3C standard...</p>
+                    <div class="fragment">
+                        <p>but every browser supports it</p>
+                        <img src="img/webgl-browser-support.png">
+                    </div>
+                    <p class="fragment">It's a difficult technology to master</p>
+                </section>
 				<section>
 					<a href="http://calm-inlet-4387.herokuapp.com/" target="_blank">
 						<img src="./img/LMV%20Nav.png">
 					</a>
 				</section>
-
-				<section>
-					<h2 style="top:250px;">Part II - UI CUSTOMIZATION</h2>
-					<h2 style="top:320px;">& OVERRIDES</h2>
-				</section>
-
-				<section>
-					<h2>2D OVERLAYS</h2>
-					<img src="./img/div-logo.jpg" style="height: 400px;">
-				</section>
-
-				<section>
-					<h2>Viewer Panel</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-class CustomPanel extends Autodesk.Viewing.UI.DockingPanel {
-
- constructor(container, title, options = {}) {
-
-  super(container, panelId, title, options)
-
-  this.container.appendChild(...)
- }
-
-}
-						</code></pre>
-				</section>
-
-				<section>
-					<iframe src="./slides/visual%20report.html" class="iframe-fullscreen">
-					</iframe>
-				</section>
-
-				<section>
-					<h2 style="top:80px;">FRAGMENT OVERRIDES</h2>
-					<section>
-						<h2 style="top:170px;">Material</h2>
-							<pre><code class="hljs" data-trim contenteditable>
-//current model
-var model = viewer.model
-
-//create custom material
-var material = new THREE.MeshPhongMaterial({
-    color: '#F43BC1'
-	//... other properties
-})
-
-//set material on specific fragId
-model.getFragmentList().setMaterial(
-    fragId, material)
-
-//force viewer to update scene
-viewer.impl.invalidate(true)
-							</code></pre>
-					</section>
-
-					<section>
-						<h2 style="top:170px;">Overlay</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-//access render proxy
-var renderProxy = viewer.impl.getRenderProxy(
-    model, fragId)
-
-//clone geometry
-var meshProxy = new THREE.Mesh(
-    renderProxy.geometry)
-
-meshProxy.matrix.copy(
-    renderProxy.matrixWorld)
-
-//create 3d overlay
-viewer.impl.addOverlay(
-    materialName, meshProxy)
-
-// force update
-viewer.impl.invalidate(true)
-							</code></pre>
-					</section>
-					<section>
-						<h2 style="top:170px;">Transform</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-// access fragment proxy i.e. THREE.Mesh
-var fragProxy = viewer.impl.getFragmentProxy(
-    model, fragId)
-
-fragProxy.getAnimTransform()
-
-fragProxy.position = new THREE.Vector3(x, y, z)
-
-//Not a standard three.js quaternion
-fragProxy.quaternion._x = qx;
-fragProxy.quaternion._y = qy;
-fragProxy.quaternion._z = qz;
-fragProxy.quaternion._w = qw;
-
-fragProxy.updateAnimTransform()
-
-viewer.impl.invalidate(true)
-							</code></pre>
-					</section>
-
-				</section>
-
-				<section>
-					<h2>PLAYING WITH SVG</h2>
-					<section>
-						<a href="http://snapsvg.io" target="_blank">
-							<img src="./img/snap.png" style="height: 400px;">
-						</a>
-					</section>
-					<section>
-						<iframe src="./slides/snap.html" style="width:500px;height:400px;">
-						</iframe>
-					</section>
-				</section>
-
-				<section>
-					<iframe src="./slides/markup.html" class="iframe-fullscreen">
-					</iframe>
-				</section>
-
-				<section>
-					<h2>Coordinates Conversion</h2>
-					<section>
-						<h2 style="top:170px;">2D > 3D</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-function screenToWorld (screenPoint) {
-
-    var viewport = viewer.navigation.getScreenViewport()
-
-    var n = {
-        x: (screenPoint.x - viewport.left) / viewport.width,
-        y: (screenPoint.y - viewport.top) / viewport.height
-    }
-
-    var worldPoint = viewer.utilities.getHitPoint(n.x, n.y)
-
-    return worldPoint
-}
-						</code></pre>
-					</section>
-					<section>
-						<h2 style="top:170px;">3D > 2D</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-function worldToScreen(worldPoint) {
-
-  var p = new THREE.Vector4()
-
-  p.x = worldPoint.x
-  p.y = worldPoint.y
-  p.z = worldPoint.z
-  p.w = 1
-
-  var camera = viewer.navigation.getCamera()
-
-  p.applyMatrix4(camera.matrixWorldInverse)
-  p.applyMatrix4(camera.projectionMatrix)
-
-  var screenPoint = viewer.impl.viewportToClient(p.x, p.y)
-
-  //snap pixel centre
-  screenPoint.x = Math.floor(screenPoint.x) + 0.5
-  screenPoint.y = Math.floor(screenPoint.y) + 0.5
-
-  return screenPoint
-}
-						</code></pre>
-					</section>
-				</section>
-
-				<section>
-					<h2 style="top: 40px;">3D OVERLAYS</h2>
-					<img src="./img/simuhub.png" style="height: 600px;">
-				</section>
+				 <section>
+                    <h2>Three.JS</h2>
+                    <p>Yes, it is simpler to create the same cube with less code.</p>
+                    <a class="fragment" href="https://github.com/jaimerosales/trianglejs/blob/master/cube-threejs.html">Simple Three.js Cube</a>
+                </section>
+                
+                <section>
+                    <h2>Forge Platform</h2>
+                    <div class="row">
+                        <div class="col-xs-6 fragment">
+                            <h1><i class="fa fa-cloud-upload"></i></h1>
+                            <p>Upload your CAD file</p>
+                            <p>Model Derivative API</p>
+                        </div>
+                        <div class="col-xs-6 fragment">
+                            <h1><i class="fa fa-desktop"></i></h1>
+                            <p>View on a browser</p>
+                            <p>Viewer</p>
+                        </div>
+                    </div>
+                    <p class="fragment">It's free!</p>
+                </section>
 
 				<section>
 					<iframe src="https://www.simulationhub.com/knowledge-base/simulation-gallery"
@@ -413,46 +183,17 @@ function worldToScreen(worldPoint) {
 				</section>
 
 				<section>
-					<iframe src="./slides/particle.html" class="iframe-fullscreen">
+					<iframe src="https://pier9.autodesk.io" class="iframe-fullscreen">
 					</iframe>
 				</section>
 
-				<section>
-
-					<section>
-						<iframe src="https://pier9.autodesk.io" class="iframe-fullscreen">
-						</iframe>
-					</section>
-
-					<section>
-						<iframe src="./slides/csstv.html" class="iframe-fullscreen">
-						</iframe>
-					</section>
-
-				</section>
-
-				<section>
-					<h2 style="top: 250px;">Part III - CONNECTING EXTERNAL DATA SOURCES</h2>
-				</section>
-
-				<section>
-					<a href="http://mongo.autodesk.io" target="_blank">
-						<img src="./img/mongo.png"/>
-					</a>
-				</section>
-
-				<section>
-					<a href="http://prelude.dotdotty.com" target="_blank">
-						<img src="./img/prelude.png">
-					</a>
-				</section>
 
 				<section>
 					<h2>RESOURCES</h2>
 					<ul>
 						<li style="margin-bottom: 20px";>
-							<a href="https://github.com/leefsmp/forge-connected-data" target="_blank">
-								https://github.com/leefsmp/forge-connected-data
+							<a href="https://github.com/jaimerosales/forge-reveal-viewer-tutorial" target="_blank">
+								https://github.com/jaimerosales/forge-reveal-viewer-tutorial
 							</a>
 						</li>
 						<li style="margin-bottom: 20px";>
@@ -461,50 +202,14 @@ function worldToScreen(worldPoint) {
 							</a>
 						</li>
 						<li style="margin-bottom: 20px";>
-							<a href="https://github.com/Developer-Autodesk/library-javascript-viewer-extensions" target="_blank">
-								library-javascript-viewer-extensions
-							</a>
-						</li>
-						<li style="margin-bottom: 20px";>
-							<a href="https://github.com/Developer-Autodesk/view.and.data-nodejs-mongo.sample" target="_blank">
-								view.and.data-nodejs-mongo.sample
-							</a>
-						</li>
-						<li style="margin-bottom: 20px";>
-							<a href="https://d3js.org" target="_blank">
-								https://d3js.org
-							</a>
-						</li>
-						<li style="margin-bottom: 20px";>
 							<a href="https://github.com/Developer-Autodesk/LmvNavTest" target="_blank">
 								LmvNavTest
 							</a>
 						</li>
 						<li>
-							. . .
+							
 						</li>
 					</ul>
-				</section>
-
-				<section>
-					<h2>VISUAL REPORTS</h2>
-					<h2 style="top: 180px;font-size: 48px;">WITH CONNECTED DATA</h2>
-
-					<h2 style="top: 320px;font-size: 100px;">Q & A</h2>
-
-					<p style="bottom: -200px; position: relative;">
-						<small>
-							<a href="http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html">
-								Philippe Leefsma
-							</a>
-							/
-							<a href="http://twitter.com/F3lipek">
-								@F3lipek
-							</a>
-							<br>
-							Forge Partner Development
-						</small>
-					</p>
 				</section>
 
 			</div>
